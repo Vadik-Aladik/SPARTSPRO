@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPARTSPRO - поставки лифтового оборудования</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="public/icon/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="public/icon/favicon_apple.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <img src="public/icon/logo_text.svg" width="185" alt="logo company with text">
+
+            <nav class="header__desktop header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#" class="header__nav-link link">Главная</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link link">Каталог</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link link">О компании</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link link">Оплата и доставка</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link link">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <button class="" id="burger"></button>
+        </div>
+
+        <div class="header__modal">
+            <nav class="header__nav container">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#" class="header__nav-link link">Главная</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link link">Каталог</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link link">О компании</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link link">Оплата и доставка</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main container">
+        <section class="recommendation">
+            <strong class="recommendation__title">Рекомендуемое оборудование</strong>
+            <div class="recommendation__cards cards"></div>
+            <button class="recommendation__button button">Перейти в каталог</button>
+        </section>
+
+        <section class="about">
+            <strong class="about__title">О компании</strong>
+            <div class="about__body">
+                <div class="about__images">
+                    <picture class="about__images-item about__images--span-two">
+                        <source srcset="public/image/about/image_top/image_37.avif" type="image/avif">
+                        <source srcset="public/image/about/image_top/image_37.webp" type="image/webp">
+                        <img src="public/image/about/image_top/image_37.jpg" alt="image from company" class="about__images-item about__images--span-two">
+                    </picture>
+                    <picture>
+                        <source srcset="public/image/about/image_left/image-1.avif" type="image/avif">
+                        <source srcset="public/image/about/image_left/image-1.webp" type="image/webp">
+                        <img src="public/image/about/image_left/image-1.jpg" alt="image from company" class="about__images-item">
+                    </picture>
+                    <picture>
+                        <source srcset="public/image/about/image_right/image.avif" type="image/avif">
+                        <source srcset="public/image/about/image_right/image.webp" type="image/webp">
+                        <img src="public/image/about/image_right/image.jpg" alt="image from company" class="about__images-item">
+                    </picture>
+                </div>
+
+                <div class="about__description">
+                    <strong class="about__description-title">Компания «SPARTSPRO» специализируется на поставках лифтового оборудования, комплектующих и запчастей для лифтов и эскалаторов ведущих мировых и российских производителей.</strong>
+                    <ul class="about__description-list">
+                        <li class="about__description-item">Гарантия качества – работаем только с проверенными производителями.</li>
+                        <li class="about__description-item">Собственный склад – более 30 000 наименований в наличии для оперативных отгрузок.</li>
+                        <li class="about__description-item">Соблюдение сроков – приоритет компании: быстрая обработка заказов и доставка без задержек.</li>
+                    </ul>
+                    <p class="about__description-guarantee">Мы обеспечиваем бесперебойные поставки для ваших проектов. Оставьте заявку – и получите коммерческое предложение в кратчайшие сроки!</p>
+                    <button class="about__description-button button">Подробнее</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
