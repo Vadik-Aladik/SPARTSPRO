@@ -45,6 +45,7 @@ const arrCards = [
 
 document.addEventListener("DOMContentLoaded", ()=>{
     const burger = document.querySelector("#burger"),
+        linkItemsMobile = document.querySelectorAll(".header__modal .header__nav-link"),
         modalBurger = document.querySelector(".header__modal"),
         recommendationCards = document.querySelector(".recommendation__cards");
 
@@ -54,6 +55,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     });
 
     loadRecomendCards();
+    linkModal();
 
     function loadRecomendCards(){
         arrCards.forEach(elem => {
@@ -72,6 +74,18 @@ document.addEventListener("DOMContentLoaded", ()=>{
             </div>`;
 
             recommendationCards.append(newCard);
+        });
+    }
+
+    function linkModal(){
+        linkItemsMobile.forEach(item => {
+            item.addEventListener("click", (event)=>{
+                if(modalBurger.classList.contains("header__modal--active")){
+                    modalBurger.classList.remove('header__modal--active');
+                    burger.classList.remove('active');
+                    console.log(`Редирект на страницу - ${item.textContent}`);
+                }
+            });
         });
     }
 
