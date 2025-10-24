@@ -41,9 +41,30 @@ const arrCards = [
         status: "stock",
         descriptionStatus: "В наличии 50 м.",
     },
+    {
+        id: 7,
+        image: "public/image/products/photomode_03102023_190535.png",
+        title: "Купить плоский тяговый ремень для лифта GRS AAA717AJ1(8 кордов)",
+        status: "stock",
+        descriptionStatus: "В наличии 50 м.",
+    },
+    {
+        id: 8,
+        image: "public/image/about/image_left/image-1.webp",
+        title: "Купить плоский тяговый ремень для лифта GRS AAA717AJ1(8 кордов)",
+        status: "stock",
+        descriptionStatus: "В наличии 50 м.",
+    },
+    {
+        id: 9,
+        image: "public/image/about/image_top/image_37.webp",
+        title: "Купить плоский тяговый ремень для лифта GRS AAA717AJ1(8 кордов)",
+        status: "stock",
+        descriptionStatus: "В наличии 50 м.",
+    },
 ]
 
-document.addEventListener("DOMContentLoaded", ()=>{
+window.addEventListener("DOMContentLoaded", ()=>{
     const burger = document.querySelector("#burger"),
         linkItemsMobile = document.querySelectorAll(".header__modal .header__nav-link"),
         modalBurger = document.querySelector(".header__modal"),
@@ -64,6 +85,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
             newCard.innerHTML = `
             <img class="cards__item-image" src="${elem.image}" alt="image card products">
+            
             <div class="cards__item-description">
                 <p class="cards__item-title">${elem.title}</p>
                 <div class="cards__item-status">
@@ -106,3 +128,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
         `;
     }
 })
+//<img class="cards__item-image" src="${elem.image}" alt="image card products">
+
+//<div class="cards__item-image">
+//                <img src="${elem.image}" alt="image card products">
+//            </div>
